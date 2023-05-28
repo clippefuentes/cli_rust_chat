@@ -28,7 +28,7 @@ fn handle_connection(mut stream: TcpStream) {
           println!("Client {:?} = {:?}", stream.peer_addr().unwrap(), msg);
         },
         Err(e)=> {
-
+          println!("Got Error = {:?}", e);
         }
       }
     }
